@@ -1,0 +1,24 @@
+Crear un algoritmo para obtener el país con mayor numero de letras a partir de un arreglo.
+    Entradas: Arreglo de países
+    Salidas: Nombre de una País
+
+Pseudocódigo
+Proceso: mayorLetrasPais
+    LeerValor: a["Mexico","Guatemala", "El salvador", "Panama"]
+    
+    Entero tamañoArreglo = a.length //
+    Entero contadorCaracteres = a[0].length
+    Cadena pais = a[0]
+    Entero i = 1
+
+    Mientras( i < tamañoArreglo ) hacer:
+        Si( a[i].length > contadorCaracteres ) entonces:
+            contadorCaracteres = a[i].length
+        pais = a[i]
+        FinSi
+        i++
+    FinMientras
+    
+    Imprimir pais
+
+FinProceso
